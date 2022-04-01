@@ -1,0 +1,10 @@
+version: '3'
+services:
+  julia-python:
+    restart: always
+    build: .
+    container_name: 'julia-python'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./src:/root/
